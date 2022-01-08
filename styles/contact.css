@@ -1,0 +1,239 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color :  rgb(74, 158, 238);
+    height : 100vh;  
+}
+.fullpage{
+    width : 100%;
+    height : 100%;
+    display : flex;
+}
+.menubar{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color : black;
+    color : white;
+    width : 15%;
+    height : 100%;
+}
+.menu {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height : 30%;
+    width : 100%;
+}
+.menu a{
+    text-decoration: none;
+    width : 100%;
+    height : 100%;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    color : rgb(230, 230, 230);
+    border-top : 1px solid rgb(24, 24, 24);
+    border-bottom : 1px solid rgb(24,24,24);
+}
+.menu a:hover{
+    background-color : rgb(28, 122, 211);
+    color : black;
+    cursor:pointer;
+}
+.disponible{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+.pres{
+    display : flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+.pres a{
+    text-decoration: none;
+}
+.pres h2{
+    text-align: center;
+    cursor:default;
+    letter-spacing : 5px;
+    margin-top : -4em;
+    margin-bottom : 1em;
+    color :rgb(74, 158, 238);
+    text-shadow : rgb(0, 104, 201) 2px 3px;
+}
+#rond{
+    width : 10px;
+    height : 10px;
+    background-color : lightgreen;
+    border-radius : 50%;
+    margin-right : 0.2em;
+    animation : rond 2s infinite;
+}
+@keyframes rond{
+    0%{opacity :1}
+    50%{opacity:0.5}
+    100%{opacity:1}
+}
+.rsx{
+    display : flex;
+    align-items: center; 
+    justify-content: center;
+}
+.rsx img{
+    margin : 0.5em;
+    width : 55px;
+}
+.accueil{
+    width : 100%;
+    height : 100vh;
+    display : flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.formulaire{
+    border : 10px soild yellow;
+    width : 50%;
+    height : 100vh;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.formulaire h2{
+    color : black;
+    font-size : 1.8em;
+    margin-bottom : 1em;
+    text-shadow: rgb(0, 104, 201) 2px 4px;
+}
+.formulaire p{
+    text-align: center;
+    margin : 2em;
+    font-size : 1.2em;
+}
+.forms{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width : 100%;
+}
+#form{
+    width : 100%;
+}
+.for{
+    width : 100%;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    background-color : rgb(0, 104, 201);
+    border : none; 
+    margin : 0.5em;
+    width : 90%;
+    color : white;
+}
+input::placeholder{
+    color : rgb(224, 224, 224);
+    padding : 1em;
+}
+
+textarea{
+    background-color : rgb(0, 104, 201);
+    border : none;
+    color : white;
+    margin-top : 1em;
+    width : 90%;
+}
+textarea::placeholder{
+    color : rgb(224, 224, 224);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 1.1em;
+    padding : 1em;
+}
+
+#submit{
+    margin-top : 2em;
+    font-size : 1em;
+    width : 10em;
+    background-color :black;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    padding : 1em;
+    transition : 0.2s;
+}
+#submit:hover{
+    color : rgb(74, 158, 238);
+}
+#nom{
+    height : 3em;
+}
+#email{
+    height : 3em;
+}
+#message{
+    height : 10em;
+}
+
+
+.map{
+    width : 50%;
+    height : 100vh;
+    background-image : url("../src /carte.png");
+    background-size : 100%;
+    background-repeat: no-repeat;
+}
+
+.coordonnees{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    height : 100%;
+}
+.cd{
+    background-color : rgb(74, 158, 238);
+    width : 70%;
+    height : 30%;
+    border-radius : 20px;
+}
+.c{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    height : 100%;
+    flex-direction: column;
+}
+.c h2{
+    letter-spacing : 0.1em;
+    text-shadow: rgb(0, 104, 201) 2px 4px;
+    margin-bottom : 1.2em;
+}
+.c h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin : 0.5em;
+}
+.email {
+    display : flex;
+}
+.smartphone{
+    display : flex;
+}
+.position{
+    display : flex;
+}
+

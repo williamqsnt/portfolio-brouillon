@@ -1,0 +1,268 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color :  rgb(74, 158, 238);
+    height : 100vh;  
+}
+.fullpage{
+    width : 100%;
+    height : 100%;
+    display : flex;
+}
+.menubar{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color : black;
+    color : white;
+    width : 15%;
+    height : 100%;
+}
+.menu {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height : 30%;
+    width : 100%;
+}
+.menu a{
+    text-decoration: none;
+    width : 100%;
+    height : 100%;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    color : rgb(230, 230, 230);
+    border-top : 1px solid rgb(24, 24, 24);
+    border-bottom : 1px solid rgb(24,24,24);
+}
+.menu a:hover{
+    background-color : rgb(28, 122, 211);
+    color : black;
+    cursor:pointer;
+}
+.disponible{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+.pres{
+    display : flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+.pres a{
+    text-decoration: none;
+}
+.pres h2{
+    text-align: center;
+    cursor:default;
+    letter-spacing : 5px;
+    margin-top : -4em;
+    margin-bottom : 1em;
+    color :rgb(74, 158, 238);
+    text-shadow : rgb(0, 104, 201) 2px 3px;
+}
+#rond{
+    width : 10px;
+    height : 10px;
+    background-color : lightgreen;
+    border-radius : 50%;
+    margin-right : 0.2em;
+    animation : rond 2s infinite;
+}
+@keyframes rond{
+    0%{opacity :1}
+    50%{opacity:0.5}
+    100%{opacity:1}
+}
+.rsx{
+    display : flex;
+    align-items: center; 
+    justify-content: center;
+}
+.rsx img{
+    margin : 0.5em;
+    width : 55px;
+}
+.accueil{
+    display : flex;
+    width : 100%;
+}
+
+.accueil h2{
+    text-align: center;
+    font-size : 2em;
+    display : flex;
+}
+#apropos{
+    font-size : 2em;
+    margin-top : -1em;
+}
+.aproposdemoi{
+    width : 50%;
+    height : 100%;
+    display : flex;
+    align-items : center;
+    flex-direction: column;
+}
+.aproposdemoi img{
+    border-radius : 50%;
+    margin-top : 2em;
+    animation : opacity 0.5s forwards;
+}
+.aproposdemoi h2{
+    text-shadow : rgb(0, 104, 201) 3px 4px;
+    font-size : 2.5em;
+    margin-top : 1em;
+
+}
+.aproposdemoi p{
+    margin-left : 2.5em;
+    margin-right : 2.5em;
+    margin-top : 2em;
+    text-align: justify;
+    font-size : 1.2em;
+    animation : opacity 1s forwards;
+}
+
+.aproposdemoii{
+
+    height : 100%;
+    width : 50%;
+    display : flex;
+    align-items: center;
+    flex-direction: column;
+       background-color : rgb(28, 122, 211);
+}
+.aproposdemoii h2{
+    text-shadow : rgb(74, 158, 238) 3px 4px;
+    font-size : 2em;
+}
+.apdm{
+    margin-top : 1em;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom : 1em;
+}
+.apdm h2{
+    display : flex;
+    align-items: center;
+}
+.apdm img{
+    margin-left : 1em;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+.apd{
+    height : 100%;
+    margin-right : 2em;
+    margin-left : 2em;
+    margin-bottom : 1em;
+}
+.apd p{
+    margin-left : 1em;
+    margin-right : 1em;
+}
+.apd ul{
+    height : 20%;
+    margin-bottom : 1em;
+}
+
+.apd li{
+    display : flex;
+    flex-direction: column;
+    height : 90%;
+    list-style-type : none;
+    box-shadow : 4px 4px 8px black;
+    border-radius : 10px;
+    background-color: rgb(230, 230, 230);
+    margin-bottom : 1em;
+}
+.besoin{
+    display : flex;
+    align-items: center;
+    margin-left : 1em;
+    margin-top : 0.5em;
+    margin-bottom : 0.5em;
+}
+.besoin h3{
+    margin-left : 0.5em;
+}
+.bes{
+    animation : opacity 1.5s forwards;
+}
+.con{
+    animation : opacity 2s forwards;
+}
+.se{
+    animation : opacity 2.5s forwards;
+}
+.che{
+    animation : opacity 3s forwards;
+}
+.liv{
+    animation : opacity 3.5s forwards;
+}
+@keyframes opacity{
+    0%{opacity:0}
+    60%{opacity:0}
+    100%{opacity:1}
+}
+.conception{
+    margin-left : 1em;
+    margin-top : 0.5em;
+    margin-bottom : 0.5em;
+    display : flex;
+    align-items: center;
+}
+.conception h3{
+    margin-left : 0.5em;
+}
+
+.seo{
+    margin-left : 1em;
+    margin-top : 0.5em;
+    margin-bottom : 0.5em;
+    display : flex;
+    align-items: center;
+}
+.seo h3{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    margin-left : 0.5em;
+}
+
+.checked{
+    margin-left : 1.2em;
+    margin-top : 0.5em;
+    margin-bottom : 0.5em;
+    display : flex;
+    align-items: center;
+}
+.checked h3{
+    margin-left : 0.5em;
+    margin-top : 0.5em;
+    margin-bottom : 0.5em;
+}
+.livraison{
+    margin-left : 1.2em;
+    margin-top : 0.5em;
+    margin-bottom : 0.5em;
+    display : flex;
+    align-items: center;
+}
+.livraison h3{
+    margin-left : 0.5em;
+    margin-top : 0.5em;
+    margin-bottom : 0.5em;
+}

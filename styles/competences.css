@@ -1,0 +1,384 @@
+* {
+    padding : 0;
+    margin : 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color :  rgb(74, 158, 238);
+    height : 100vh;  
+}
+.fullpage{
+    width : 100%;
+    height : 100%;
+    display : flex;
+}
+.menubar{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color : black;
+    color : white;
+    width : 15%;
+    height : 100%;
+}
+.menu {
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height : 30%;
+    width : 100%;
+}
+.menu a{
+    text-decoration: none;
+    width : 100%;
+    height : 100%;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    color : rgb(230, 230, 230);
+    border-top : 1px solid rgb(24, 24, 24);
+    border-bottom : 1px solid rgb(24,24,24);
+}
+.menu a:hover{
+    background-color : rgb(28, 122, 211);
+    color : black;
+    cursor:pointer;
+}
+.disponible{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+.pres{
+    display : flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+.pres a{
+    text-decoration: none;
+}
+.pres h2{
+    text-align: center;
+    cursor:default;
+    letter-spacing : 5px;
+    margin-top : -4em;
+    margin-bottom : 1em;
+    color :rgb(74, 158, 238);
+    text-shadow : rgb(0, 104, 201) 2px 3px;
+}
+#rond{
+    width : 10px;
+    height : 10px;
+    background-color : lightgreen;
+    border-radius : 50%;
+    margin-right : 0.2em;
+    animation : rond 2s infinite;
+}
+@keyframes rond{
+    0%{opacity :1}
+    50%{opacity:0.5}
+    100%{opacity:1}
+}
+.rsx{
+    display : flex;
+    align-items: center; 
+    justify-content: center;
+}
+.rsx img{
+    margin : 0.5em;
+    width : 55px;
+}
+.accueil{
+    width : 100%;
+    height : 100vh;
+    display : flex;
+}
+.skills{
+    width : 50%;
+}
+.skills h2{
+    text-align: center;
+    margin-top :0.8em;
+    font-weight: bolder;
+    font-size : 3em;
+    color : black;
+    letter-spacing : 5px;
+    text-shadow : rgb(2, 88, 168) 4px 5px; 
+}
+.langagepp{
+    display : flex;
+    margin-top : 1em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.HTML{
+    margin : 1em;
+}
+.PHP{
+    margin : 1em; 
+}
+.CSS{
+    margin : 1em;
+}
+.JAVASCRIPT{
+    margin : 1em;
+}
+.progressBar-HTML{
+    width : 20em;
+    height : 0.5em;
+    background-color : rgb(0, 104, 201);
+    border-radius : 30px;
+}
+.progressBar-HTMLafter{
+    animation : progressbhtml 2s forwards;
+    height : 100%;
+    border-radius :30px;
+    background-color : rgb(202, 221, 240);
+}
+@keyframes progressbhtml{
+    from{width:0%;}
+    to{width:95%;}
+}
+.progressBar-PHP{
+    width : 20em;
+    height : 0.5em;
+    background-color : rgb(0, 104, 201);
+    border-radius : 30px;
+}
+.progressBar-PHPafter{
+    animation : progressbphp 2s forwards;
+    height : 100%;
+    border-radius : 30px;
+    background-color : rgb(202, 221, 240);
+}
+@keyframes progressbphp{
+    from{width:0%;}
+    to{width:30%;}
+}
+.progressBar-CSS{
+    width : 20em;
+    height : 0.5em;
+    background-color : rgb(0, 104, 201);
+    border-radius : 30px;
+}
+.progressBar-CSSafter{
+    animation : progressbcss 2s forwards;
+    height : 100%;
+    border-radius : 30px;
+    background-color : rgb(202, 221, 240);
+}
+@keyframes progressbcss{
+    from{width:0%;}
+    to{width:87%;}
+}
+.progressBar-JS{
+    width : 20em;
+    height : 0.5em;
+    background-color : rgb(0, 104, 201);
+    border-radius : 30px;
+}
+.progressBar-JSafter{
+    animation : progressbjs 2s forwards;
+    height : 100%;
+    border-radius : 30px;
+    background-color : rgb(202, 221, 240);
+}
+@keyframes progressbjs{
+    from{width:0%;}
+    to{width:75%;}
+}
+.frameworks h2{
+    color : black;
+    letter-spacing : 5px;
+    text-shadow : rgb(2, 88, 168) 4px 5px; 
+}
+.angularjs{
+    margin : 1em;
+}
+.expressjs{
+    margin : 1em;
+}
+.bootstrap{
+    margin : 1em;
+}
+.mysql{
+    margin : 1em;
+}
+.frameworkss{
+    margin-top : 1em;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.progressBar-angularjs{
+    width : 20em;
+    height : 0.5em;
+    background-color : rgb(0, 104, 201);
+    border-radius : 30px;
+}
+.progressBar-angularjsafter{
+    animation : progressbangularjs 2s forwards;
+    height : 100%;
+    border-radius : 30px;
+    background-color : rgb(202, 221, 240);
+}
+@keyframes progressbangularjs{
+    from{width:0%;}
+    to{width:25%;}
+}
+.progressBar-expressjs{
+    width : 20em;
+    height : 0.5em;
+    background-color : rgb(0, 104, 201);
+    border-radius : 30px;
+}
+.progressBar-expressjsafter{
+    animation : progressbexpressjs 2s forwards;
+    height : 100%;
+    border-radius : 30px;
+    background-color : rgb(202, 221, 240);
+}
+@keyframes progressbexpressjs{
+    from{width:0%;}
+    to{width:40%;}
+}
+.progressBar-bootstrap{
+    width : 20em;
+    height : 0.5em;
+    background-color : rgb(0, 104, 201);
+    border-radius : 30px;
+}
+.progressBar-bootstrapafter{
+    animation : progressbbootstrap 2s forwards;
+    height : 100%;
+    border-radius : 30px;
+    background-color : rgb(202, 221, 240);
+}
+@keyframes progressbbootstrap{
+    from{width:0%;}
+    to{width:35%;}
+}
+.progressBar-mysql{
+    width : 20em;
+    height : 0.5em;
+    background-color : rgb(0, 104, 201);
+    border-radius : 30px;
+}
+.progressBar-mysqlafter{
+    animation : progressbmysql 2s forwards;
+    height : 100%;
+    border-radius : 30px;
+    background-color : rgb(202, 221, 240);
+}
+@keyframes progressbmysql{
+    from{width:0%;}
+    to{width:30%;}
+}
+
+.tools {
+    width :50%;
+    background-color : rgb(18, 116, 207);
+}
+.toolss h2{
+    text-align: center;
+    margin-top : 0.5em;
+    font-weight: bolder;
+    font-size : 2.5em;
+    color : black;
+    letter-spacing : 5px;
+    text-shadow : rgb(74, 158, 238) 4px 5px; 
+    }
+.toolss{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap : wrap;
+    margin-top : 4em;
+}
+.toolss h3{
+    background-color : rgb(74, 158, 238);
+    color : white;
+    padding : 0.5em;
+    font-weight: lighter;
+    margin-top : 0.2em; 
+    margin-right : 0.1em;
+    margin-left : 0.1em;
+    border-radius : 50px;
+    transition : 0.2s;
+}
+.toolss h3:hover{
+    background-color : rgb(202, 221, 240);
+}
+.tools a{
+    text-decoration: none;
+}
+
+.systemes h2{
+    text-align: center;
+    margin-top : 2em;
+    font-weight: bolder;
+    font-size : 2.5em;
+    color : black;
+    letter-spacing : 5px;
+    text-shadow : rgb(74, 158, 238) 4px 5px; 
+}
+.systemess{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap : wrap;
+    margin-top : 2em;
+}
+.systemess h3{
+    background-color : rgb(74, 158, 238);
+    color : white;
+    padding : 0.5em;
+    font-weight: lighter;
+    margin-top : 0.2em; 
+    margin-right : 0.1em;
+    margin-left : 0.1em;
+    border-radius : 50px;
+    transition : 0.2s;
+}
+.systemess h3:hover{
+    background-color : rgb(202, 221, 240);
+}
+
+.languess{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap : wrap;
+    margin-top : 2em;
+}
+
+.langues h2{
+    text-align: center;
+    margin-top : 2em;
+    font-weight: bolder;
+    font-size : 2.5em;
+    color : black;
+    letter-spacing : 5px;
+    text-shadow : rgb(74, 158, 238) 4px 5px; 
+}
+
+.languess h3{
+    background-color : rgb(74, 158, 238);
+    color : white;
+    padding : 0.5em;
+    font-weight: lighter;
+    margin-top : 0.2em; 
+    margin-right : 0.1em;
+    margin-left : 0.1em;
+    border-radius : 50px;
+    transition : 0.2s;
+}
+.languess h3:hover{
+    background-color : rgb(202, 221, 240);
+}
